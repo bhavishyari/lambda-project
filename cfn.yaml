@@ -36,12 +36,16 @@ Resources:
   Lambda:
     Type: AWS::Lambda::Function
     Properties:
-      FunctionName: "lambda-multi-cicd"
-      Description: "Lambda example"
-      Code: ./src/
+      Code: ./actionRide/funtions/
       Handler: index.handler
       Runtime: nodejs16.x
       Timeout: 900
       Role: !GetAtt LambdaRole.Arn
       PackageType: Zip
       MemorySize: 128
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-0c86297ab2bce9bd3
+        SubnetIds:
+          - subnet-028d2373acab38018
+          - subnet-04238b41db0f84716 
