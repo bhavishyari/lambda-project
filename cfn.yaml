@@ -36,7 +36,9 @@ Resources:
   Lambda:
     Type: AWS::Lambda::Function
     Properties:
-      Code: ./actionRide/funtions/
+      Code: 
+        S3Bucket: lambda-demo-cft
+        S3Key: actionRide.zip
       Handler: index.handler
       Runtime: nodejs16.x
       Timeout: 900
