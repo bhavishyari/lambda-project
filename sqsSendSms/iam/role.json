@@ -1,0 +1,21 @@
+{
+  "Role": {
+    "Path": "/",
+    "RoleName": "dev-sqs-send-sms-executor",
+    "RoleId": "AROA575AMIZFGNLOMSPZD",
+    "Arn": "arn:aws:iam::961872152138:role/dev-sqs-send-sms-executor",
+    "CreateDate": "2020-09-08T11:40:03Z",
+    "AssumeRolePolicyDocument": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Principal": {
+            "Service": "lambda.amazonaws.com"
+          },
+          "Action": "sts:AssumeRole"
+        }
+      ]
+    }
+  }
+}

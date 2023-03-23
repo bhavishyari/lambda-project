@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "sqs-expired-pass-executor",
+    "name": "sqs-expired-pass",
+    "region": "us-west-2"
+  }
+}

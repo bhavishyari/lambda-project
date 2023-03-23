@@ -1,0 +1,94 @@
+<mjml>
+  <mj-head>
+    <mj-title>BOARDING_PASS_UPGRADED : Yello</mj-title>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" />
+    <mj-font name="Roboto Slab" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" />
+    <mj-attributes>
+      <mj-all font-size="14px" line-height="24px" font-weight="400" color="#2a2a2a" font-family="Open Sans"></mj-all>
+
+      <mj-text padding="12px 6%"></mj-text>
+
+      <mj-class name="herotext" padding="0px 6%" font-size="26px" line-height="32px" font-weight="300" color="#0B2A3E" font-family="Roboto Slab"></mj-class>
+
+      <mj-class name="main-title" font-size="24px" line-height="46px" font-weight="700" color="#3a3a3a" font-family="Open Sans" letter-spacing="1px"></mj-class>
+
+      <mj-class name="title" line-height="24px" font-weight="600" color="#3a3a3a" font-family="Open Sans"></mj-class>
+
+      <mj-class name="footertext" font-size="13px" line-height="24px" color="#3a3a3a"></mj-class>
+
+    </mj-attributes>
+    <mj-style inline="inline">
+      .shadow { -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25); box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25); } .title-border { float: left; }
+    </mj-style>
+  </mj-head>
+  <mj-body width="768px">
+    <mj-section background-color="#ffff33" padding="32px 24px 28px">
+      <mj-column>
+        <mj-image padding="0px" width="172px" src="https://yt-dev-images.s3-us-west-2.amazonaws.com/yello-taxi-logo-small.png" href="#" />
+      </mj-column>
+    </mj-section>
+
+    <mj-wrapper background-color="#fafdf0" padding="10px 6%">
+      <mj-section padding="30px 0px 30px 0px">
+        <mj-column>
+          <mj-text mj-class="title">
+            Hello {{firstname}},
+          </mj-text>
+          <mj-text>
+            Your boarding pass has been successfully upgraded as requested. Your new plan is <b>{{new_plan_name}}</b> Enjoy all the new features with your new pass.
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#fff" border="0px solid red" padding="30px 4% 30px">
+        <mj-column width="100%" border-bottom="2px solid #ddd">
+
+          <mj-text mj-class="main-title" padding="0 15px 20px">
+            Your Plan Upgraded
+          </mj-text>
+
+        </mj-column>
+
+        <mj-column width="35%">
+
+          <mj-image padding="0px" width="250px" src={{qr_code_url}} href="#" />
+
+        </mj-column>
+
+        <mj-column width="65%">
+          <mj-text font-size="22px" color="#0B2A3E" font-weight="bold" line-height="48px" padding="15px 15px 18px">
+            #{{pass_number}}
+          </mj-text>
+          <mj-text padding="0px 15px 18px 15px" font-weight="600">
+            Validity: {{valid_from}} - {{valid_to}}
+          </mj-text>
+          <mj-text padding="0px 15px 18px 15px">
+            Type: {{pass_type}}
+          </mj-text>
+          <mj-text padding="0px 15px 18px 15px">
+            Status: {{pass_status}}
+          </mj-text>
+        </mj-column>
+
+      </mj-section>
+
+    </mj-wrapper>
+
+
+    <mj-section background-color="#fafdf0" padding="48px 6% 24px" border-top="solid #ffff33">
+      <mj-column width="33%">
+
+      </mj-column>
+
+      <mj-column width="33%">
+        <mj-text mj-class="footertext" font-size="14px" padding-top="0px" align="center">
+          &copy;Yello
+        </mj-text>
+      </mj-column>
+      <mj-column width="33%">
+
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

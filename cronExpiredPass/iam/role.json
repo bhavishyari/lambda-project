@@ -1,0 +1,23 @@
+{
+  "Role": {
+    "AssumeRolePolicyDocument": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Action": "sts:AssumeRole",
+          "Effect": "Allow",
+          "Principal": {
+            "Service": "lambda.amazonaws.com"
+          }
+        }
+      ]
+    },
+    "MaxSessionDuration": 3600,
+    "RoleId": "AROA575AMIZFIGYHZQGGH",
+    "CreateDate": "2020-08-18T14:21:52Z",
+    "RoleName": "cron-expired-pass-executor",
+    "Path": "/",
+    "RoleLastUsed": {},
+    "Arn": "arn:aws:iam::961872152138:role/cron-expired-pass-executor"
+  }
+}

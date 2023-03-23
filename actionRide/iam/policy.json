@@ -1,0 +1,38 @@
+{
+  "Policy": {
+    "PolicyName": "action-ride-executor-policy",
+    "Description": "Customer managed policy for action-ride-executor role.",
+    "PermissionsBoundaryUsageCount": 0,
+    "CreateDate": "2020-08-11T14:42:58Z",
+    "AttachmentCount": 1,
+    "IsAttachable": true,
+    "PolicyId": "ANPA575AMIZFAVXQNEBZC",
+    "DefaultVersionId": "v2",
+    "Path": "/",
+    "Arn": "arn:aws:iam::961872152138:policy/action-ride-executor-policy",
+    "UpdateDate": "2020-08-11T14:44:00Z"
+  },
+  "Permissions": {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "VisualEditor0",
+        "Effect": "Allow",
+        "Action": "sqs:SendMessage",
+        "Resource": "arn:aws:sqs:*:*:send-mail"
+      },
+      {
+        "Sid": "VisualEditor1",
+        "Effect": "Allow",
+        "Action": "sqs:SendMessage",
+        "Resource": "arn:aws:sqs:*:*:send-sms"
+      },
+      {
+        "Sid": "VisualEditor2",
+        "Effect": "Allow",
+        "Action": "sqs:SendMessage",
+        "Resource": "arn:aws:sqs:*:*:send-push"
+      }
+    ]
+  }
+}

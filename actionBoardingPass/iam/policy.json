@@ -1,0 +1,38 @@
+{
+  "Policy": {
+    "PolicyName": "action-boarding-pass-executor-policy",
+    "Description": "Customer managed policy for action-boarding-pass-executor role.",
+    "PermissionsBoundaryUsageCount": 0,
+    "CreateDate": "2020-07-29T10:06:32Z",
+    "AttachmentCount": 1,
+    "IsAttachable": true,
+    "PolicyId": "ANPA575AMIZFNNYAGSNNW",
+    "DefaultVersionId": "v1",
+    "Path": "/",
+    "Arn": "arn:aws:iam::961872152138:policy/action-boarding-pass-executor-policy",
+    "UpdateDate": "2020-07-29T10:06:32Z"
+  },
+  "Permissions": {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "VisualEditor0",
+        "Effect": "Allow",
+        "Action": "sqs:SendMessage",
+        "Resource": "arn:aws:sqs:*:*:send-mail"
+      },
+      {
+        "Sid": "VisualEditor1",
+        "Effect": "Allow",
+        "Action": "sqs:SendMessage",
+        "Resource": "arn:aws:sqs:*:*:send-sms"
+      },
+      {
+        "Sid": "VisualEditor2",
+        "Effect": "Allow",
+        "Action": "sqs:SendMessage",
+        "Resource": "arn:aws:sqs:*:*:send-push"
+      }
+    ]
+  }
+}

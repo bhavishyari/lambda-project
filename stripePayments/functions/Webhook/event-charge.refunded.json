@@ -1,0 +1,115 @@
+{
+  "id": "ch_1Hein6KXJcDam8kWBut2lprJ",
+  "object": "charge",
+  "amount": 5350,
+  "amount_captured": 5350,
+  "amount_refunded": 5350,
+  "application": null,
+  "application_fee": null,
+  "application_fee_amount": null,
+  "balance_transaction": "txn_1Hein6KXJcDam8kWbH23ZQYM",
+  "billing_details": {
+      "address": {
+          "city": null,
+          "country": null,
+          "line1": null,
+          "line2": null,
+          "postal_code": "10001",
+          "state": null
+      },
+      "email": null,
+      "name": null,
+      "phone": null
+  },
+  "calculated_statement_descriptor": "Stripe",
+  "captured": true,
+  "created": 1603292392,
+  "currency": "usd",
+  "customer": "cus_ICWBlLLtWWSGKu",
+  "description": "Payment for Boarding Pass",
+  "destination": null,
+  "dispute": null,
+  "disputed": false,
+  "failure_code": null,
+  "failure_message": null,
+  "fraud_details": {},
+  "invoice": null,
+  "livemode": false,
+  "metadata": {
+      "order_id": "67868be5-ff31-44cb-8460-03856859b94c",
+      "initiated_at": "1603292367"
+  },
+  "on_behalf_of": null,
+  "order": null,
+  "outcome": {
+      "network_status": "approved_by_network",
+      "reason": null,
+      "risk_level": "normal",
+      "risk_score": 6,
+      "seller_message": "Payment complete.",
+      "type": "authorized"
+  },
+  "paid": true,
+  "payment_intent": "pi_1HeimhKXJcDam8kWZIQUxjv1",
+  "payment_method": "pm_1Hein5KXJcDam8kWnIORuYu5",
+  "payment_method_details": {
+      "card": {
+          "brand": "visa",
+          "checks": {
+              "address_line1_check": null,
+              "address_postal_code_check": "pass",
+              "cvc_check": "pass"
+          },
+          "country": "US",
+          "exp_month": 11,
+          "exp_year": 2020,
+          "fingerprint": "fty7gsSntDiHTSGj",
+          "funding": "credit",
+          "installments": null,
+          "last4": "4242",
+          "network": "visa",
+          "three_d_secure": null,
+          "wallet": null
+      },
+      "type": "card"
+  },
+  "receipt_email": null,
+  "receipt_number": null,
+  "receipt_url": "https://pay.stripe.com/receipts/acct_1HFffjKXJcDam8kW/ch_1Hein6KXJcDam8kWBut2lprJ/rcpt_IFDDu7528eJX2KNu1AmRGaXMG2c73Om",
+  "refunded": true,
+  "refunds": {
+      "object": "list",
+      "data": [
+          {
+              "id": "re_1HeioSKXJcDam8kWpj0P47b1",
+              "object": "refund",
+              "amount": 5350,
+              "balance_transaction": "txn_1HeioSKXJcDam8kW8Yqk1MlF",
+              "charge": "ch_1Hein6KXJcDam8kWBut2lprJ",
+              "created": 1603292476,
+              "currency": "usd",
+              "metadata": {
+                  "refund_request_id": "5a2748be-0f3b-4933-b300-840e2f1eadba"
+              },
+              "payment_intent": "pi_1HeimhKXJcDam8kWZIQUxjv1",
+              "reason": "requested_by_customer",
+              "receipt_number": null,
+              "source_transfer_reversal": null,
+              "status": "succeeded",
+              "transfer_reversal": null
+          }
+      ],
+      "has_more": false,
+      "total_count": 1,
+      "url": "/v1/charges/ch_1Hein6KXJcDam8kWBut2lprJ/refunds"
+  },
+  "review": null,
+  "shipping": null,
+  "source": null,
+  "source_transfer": null,
+  "statement_descriptor": null,
+  "statement_descriptor_suffix": null,
+  "status": "succeeded",
+  "transfer_data": null,
+  "transfer_group": null
+}

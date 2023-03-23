@@ -1,0 +1,26 @@
+{
+  "Policy": {
+    "PolicyName": "cron-expired-pass-executor-policy",
+    "Description": "Customer managed policy for cron-expired-pass-executor role.",
+    "PermissionsBoundaryUsageCount": 0,
+    "CreateDate": "2020-08-18T14:34:24Z",
+    "AttachmentCount": 1,
+    "IsAttachable": true,
+    "PolicyId": "ANPA575AMIZFBJHVRNCQK",
+    "DefaultVersionId": "v1",
+    "Path": "/",
+    "Arn": "arn:aws:iam::961872152138:policy/cron-expired-pass-executor-policy",
+    "UpdateDate": "2020-08-18T14:34:24Z"
+  },
+  "Permissions": {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "VisualEditor0",
+        "Effect": "Allow",
+        "Action": "sqs:SendMessage",
+        "Resource": "arn:aws:sqs:*:*:expired-pass"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Role": {
+    "AssumeRolePolicyDocument": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Action": "sts:AssumeRole",
+          "Effect": "Allow",
+          "Principal": {
+            "Service": "lambda.amazonaws.com"
+          }
+        }
+      ]
+    },
+    "MaxSessionDuration": 3600,
+    "RoleId": "AROA575AMIZFKRHG7HZH2",
+    "CreateDate": "2020-07-29T05:19:06Z",
+    "RoleName": "action-boarding-pass-executor",
+    "Path": "/",
+    "RoleLastUsed": {},
+    "Arn": "arn:aws:iam::961872152138:role/action-boarding-pass-executor"
+  }
+}

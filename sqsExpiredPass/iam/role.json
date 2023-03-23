@@ -1,0 +1,21 @@
+{
+  "Role": {
+    "Path": "/",
+    "RoleName": "dev-event-rating-executor",
+    "RoleId": "AROA575AMIZFKME5ZZIX6",
+    "Arn": "arn:aws:iam::961872152138:role/dev-event-rating-executor",
+    "CreateDate": "2020-08-24T06:57:09Z",
+    "AssumeRolePolicyDocument": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Principal": {
+            "Service": "lambda.amazonaws.com"
+          },
+          "Action": "sts:AssumeRole"
+        }
+      ]
+    }
+  }
+}

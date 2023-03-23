@@ -1,0 +1,37 @@
+{
+  "Policy": {
+    "PolicyName": "dev-sqs-notification-expiring-pass-executor-policy",
+    "PolicyId": "ANPA575AMIZFAYT5WYZMJ",
+    "Arn": "arn:aws:iam::961872152138:policy/dev-sqs-notification-expiring-pass-executor-policy",
+    "Path": "/",
+    "DefaultVersionId": "v1",
+    "AttachmentCount": 1,
+    "IsAttachable": true,
+    "Description": "Customer managed policy for dev-sqs-notification-expiring-pass-executor role.",
+    "CreateDate": "2020-09-03T12:26:29Z",
+    "UpdateDate": "2020-09-03T12:26:29Z"
+  },
+  "Permissions": {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "VisualEditor0",
+        "Effect": "Allow",
+        "Action": "sqs:SendMessage",
+        "Resource": "arn:aws:sqs:*:*:send-mail"
+      },
+      {
+        "Sid": "VisualEditor1",
+        "Effect": "Allow",
+        "Action": "sqs:SendMessage",
+        "Resource": "arn:aws:sqs:*:*:send-sms"
+      },
+      {
+        "Sid": "VisualEditor2",
+        "Effect": "Allow",
+        "Action": "sqs:SendMessage",
+        "Resource": "arn:aws:sqs:*:*:send-push"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "user-profile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "dev": "sls offline start",
+    "deploy": "sls deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless": "^1.78.1",
+    "serverless-offline": "^8.8.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.738.0",
+    "firebase-admin": "^9.0.0",
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.0",
+    "stripe": "^8.83.0",
+    "validator": "^13.1.17"
+  }
+}

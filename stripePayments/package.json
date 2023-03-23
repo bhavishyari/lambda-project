@@ -1,0 +1,21 @@
+{
+  "name": "stripe-payments",
+  "version": "1.0.0",
+  "description": "Stripe integration actions",
+  "main": "",
+  "scripts": {
+    "dev": "sls offline start",
+    "deploy": "sls deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "stripe": "^8.79.0",
+    "uuid": "^8.2.0"
+  },
+  "devDependencies": {
+    "serverless": "^1.77.0"
+  }
+}

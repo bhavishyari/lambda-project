@@ -1,0 +1,26 @@
+{
+  "Role": {
+    "AssumeRolePolicyDocument": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Action": "sts:AssumeRole",
+          "Effect": "Allow",
+          "Principal": {
+            "Service": "lambda.amazonaws.com"
+          }
+        }
+      ]
+    },
+    "MaxSessionDuration": 3600,
+    "RoleId": "AROA575AMIZFPOD3PHNNZ",
+    "CreateDate": "2020-07-20T09:02:02Z",
+    "RoleName": "action-ride-executor",
+    "Path": "/",
+    "RoleLastUsed": {
+      "Region": "us-west-2",
+      "LastUsedDate": "2020-08-06T14:48:45Z"
+    },
+    "Arn": "arn:aws:iam::961872152138:role/action-ride-executor"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Role": {
+    "Path": "/",
+    "RoleName": "dev-cron-notification-expiring-pass-executor",
+    "RoleId": "AROA575AMIZFMKX5FLMWC",
+    "Arn": "arn:aws:iam::961872152138:role/dev-cron-notification-expiring-pass-executor",
+    "CreateDate": "2020-09-02T13:05:49Z",
+    "AssumeRolePolicyDocument": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Principal": {
+            "Service": "lambda.amazonaws.com"
+          },
+          "Action": "sts:AssumeRole"
+        }
+      ]
+    }
+  }
+}

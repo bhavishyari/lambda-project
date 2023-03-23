@@ -1,0 +1,67 @@
+{
+  "Policy": {
+    "PolicyName": "sqs-send-mail-dev-lambda",
+    "PolicyId": "ANPA575AMIZFPSJC2LWKA",
+    "Arn": "arn:aws:iam::961872152138:policy/dev-sqs-send-mail-executor-policy",
+    "Path": "/",
+    "DefaultVersionId": "v1",
+    "AttachmentCount": 1,
+    "IsAttachable": true,
+    "Description": "Customer managed policy for dev-sqs-send-mail-executor role.",
+    "CreateDate": "2020-09-08T10:59:41Z",
+    "UpdateDate": "2020-09-08T10:59:41Z"
+  },
+  "Permissions": {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PermissionToAssumeAlice",
+            "Effect": "Allow",
+            "Action": "sts:AssumeRole",
+            "Resource": "arn:aws:iam::961872152138:user/nafees"
+        },
+        {
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:CreateLogGroup"
+            ],
+            "Resource": [
+                "arn:aws:logs:us-west-2:961872152138:log-group:/aws/lambda/sqs-send-mail-dev*:*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "logs:PutLogEvents"
+            ],
+            "Resource": [
+                "arn:aws:logs:us-west-2:961872152138:log-group:/aws/lambda/sqs-send-mail-dev*:*:*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "ses:SendEmail",
+                "ses:SendTemplatedEmail",
+                "ses:SendRawEmail",
+                "ses:SendBulkTemplatedEmail"
+            ],
+            "Resource": [
+                "arn:aws:ses:*:*:identity/*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "sqs:ReceiveMessage",
+                "sqs:DeleteMessage",
+                "sqs:GetQueueAttributes"
+            ],
+            "Resource": [
+                "arn:aws:sqs:us-west-2:961872152138:send-mail"
+            ],
+            "Effect": "Allow"
+        }
+    ]
+}
+}

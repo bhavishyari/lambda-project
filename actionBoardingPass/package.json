@@ -1,0 +1,20 @@
+{
+  "name": "action-boarding-pass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "serverless": "^1.78.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.722.0",
+    "lodash.indexof": "^4.0.5",
+    "moment": "^2.27.0",
+    "moment-timezone": "^0.5.31",
+    "node-fetch": "^2.6.1",
+    "validator": "^11.1.0"
+  }
+}
